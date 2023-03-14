@@ -4,7 +4,7 @@
 
 
 def app(str1: str) -> None:
-    ... # Ваш код
+    print(str1.replace("о", "*"))
 
 
 if __name__ == '__main__':
