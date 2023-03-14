@@ -5,7 +5,8 @@
 
 
 def app(str1: str) -> None:
-    ... # Ваш код
+    new_str = str1[len(str1) // 2 - 1] + str1[len(str1) // 2] + str1[len(str1) // 2 + 1]
+    print(new_str)
 
 
 if __name__ == '__main__':
