@@ -4,7 +4,9 @@
 
 
 def app(str1: str) -> None:
-    ... # Ваш код
+    if str1.find('m'):
+        print(str1)
+
 
 if __name__ == '__main__':
     str1 = "Цель работы: познакомиться с основны-ми"

@@ -3,7 +3,7 @@
 
 
 def app(str1: str) -> None:
-    ... # Ваш код
+    print(len(str1))
 
 
 if __name__ == '__main__':
