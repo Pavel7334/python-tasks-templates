@@ -5,7 +5,8 @@
 
 
 def app(str1: str, str2: str) -> None:
-    ... # Ваш код
+    str3 = str1[:len(str1) // 2] + str2 + str1[len(str1) // 2:]
+    print(str3)
 
 
 if __name__ == '__main__':
