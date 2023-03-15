@@ -2,7 +2,7 @@
 # Выведите в терминал его размер.
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    print(len(my_list))
 
 
 if __name__ == "__main__":
