@@ -8,12 +8,12 @@ def app(str1: str) -> None:
 
     print("".join(reversed(str1)))
 
-    chars = list(str1)
-    for i in range(len(str1) // 2):
-        tmp = chars[i]
-        chars[i] = chars[len(str1) - i - 1]
-        chars[len(str1) - i - 1] = tmp
-    print(''.join(chars))
+    chars = list(str1)                          # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
+    for i in range(len(str1) // 2):             # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
+        tmp = chars[i]                          # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
+        chars[i] = chars[len(str1) - i - 1]     # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
+        chars[len(str1) - i - 1] = tmp          # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
+    print(''.join(chars))                       # БЕЗ ЦИКЛОВ ЭТО ПРОСТО КАК ВАРИАНТ
 
 
 if __name__ == '__main__':

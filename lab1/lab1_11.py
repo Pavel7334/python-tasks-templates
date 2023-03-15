@@ -4,7 +4,8 @@
 
 
 def app(str1: str) -> None:
-    ... # Ваш код
+    str2 = str1.split()
+    print(str2)
 
 
 if __name__ == '__main__':
