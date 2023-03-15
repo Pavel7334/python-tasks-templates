@@ -2,7 +2,8 @@
 # Добавьте в его конец значение 12 и выведите в терминал полученный результат.
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    my_list.append(12)
+    print(my_list)
 
 
 if __name__ == "__main__":
