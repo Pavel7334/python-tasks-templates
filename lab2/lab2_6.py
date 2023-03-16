@@ -4,7 +4,8 @@
 # Для решения задачи запрещено использовать циклы.
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    quantity_2 = my_list.count(2)
+    print(quantity_2)
 
 
 if __name__ == "__main__":

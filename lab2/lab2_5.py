@@ -2,7 +2,8 @@
 # и выведите в терминал полученный результат.
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    my_list.remove(3)
+    print(my_list)
 
 
 if __name__ == "__main__":
