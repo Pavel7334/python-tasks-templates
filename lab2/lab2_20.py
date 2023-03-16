@@ -2,11 +2,11 @@
 # выведите в терминал полученный результат. 
 # Для решения задачи запрещено использовать циклы. 
 from typing import Any
-from random import choice
+import random
 
 
 def app(my_list: list[Any]) -> None:
-    ... # Ваш код
+    print(random.choice(my_list))
 
 
 if __name__ == "__main__":

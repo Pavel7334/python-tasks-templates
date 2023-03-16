@@ -5,7 +5,7 @@ from typing import Any
 
 
 def app(my_list: list[Any]) -> None:
-    ... # Ваш код
+    print(my_list.index('a'))
 
 
 if __name__ == "__main__":
