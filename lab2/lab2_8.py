@@ -4,7 +4,7 @@
 # Для решения задачи запрещено использовать циклы.
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    print(min(my_list))
 
 
 if __name__ == "__main__":

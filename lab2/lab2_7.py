@@ -5,7 +5,7 @@
 
 
 def app(my_list: list[int]) -> None:
-    ... # Ваш код
+    print(max(my_list))
 
 
 if __name__ == "__main__":
