@@ -4,7 +4,7 @@ from typing import Any
 
 
 def app(my_list1: list[Any], my_list2: list[Any]) -> None:
-    ... # Ваш код
+    print(my_list1 + my_list2)
 
 
 if __name__ == "__main__":
