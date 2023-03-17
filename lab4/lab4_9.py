@@ -3,7 +3,8 @@
 # представляющий собой разницу между списками (непересекающиеся элементы). 
 # Выведите в терминал полученный результат.
 def app(my_list1: list, my_list2: list) -> None:
-    ... # Ваш код
+    my_list3 = set(my_list1) ^ set(my_list2)
+    print(list(my_list3))
 
 
 if __name__ == "__main__":
