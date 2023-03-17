@@ -3,7 +3,7 @@
 # последние 5 элементов my_tuple. 
 # Выведите в терминал полученный результат.
 def app(my_tuple: tuple) -> None:
-    ... # Ваш код
+    print(my_tuple[-5:])
 
 
 if __name__ == "__main__":
