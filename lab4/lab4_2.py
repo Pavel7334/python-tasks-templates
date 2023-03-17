@@ -2,7 +2,8 @@
 # На его основе сформируйте множество my_set и 
 # выведите в терминал полученный результат.
 def app(my_tuple: list[int]) -> None:
-    ... # Ваш код
+    my_set = set(my_tuple)
+    print(my_set)
 
 
 if __name__ == "__main__":
