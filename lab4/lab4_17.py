@@ -3,7 +3,9 @@
 # выведите полученный результат в терминал.  
 # Для решения задачи запрещено использовать циклы.
 def app(A: set[int], B: set[int]) -> None:
-    ... # Ваш код
+    common_elements = A.intersection(B)
+    print(common_elements)
+
 
 
 if __name__ == "__main__":
