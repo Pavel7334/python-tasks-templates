@@ -2,7 +2,8 @@
 # Сформируйте новый список, содержащий не повторяющиеся элементы, 
 # и выведите его в терминал.
 def app(my_list: list) -> None:
-    ... # Ваш код
+    new_list = list(set(my_list))
+    print(new_list)
 
 
 if __name__ == "__main__":
