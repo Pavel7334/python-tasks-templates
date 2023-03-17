@@ -3,7 +3,7 @@
 # последнего элемента первой переменной. 
 # Полученный результат выведите в терминал. 
 def app(my_tuple: tuple) -> None:
-    ... # Ваш код
+    print(my_tuple[0], my_tuple[len(my_tuple)//2], my_tuple[-1])
 
 
 if __name__ == "__main__":
