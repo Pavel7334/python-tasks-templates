@@ -3,7 +3,9 @@
 # выведите в терминал полученный результат. 
 # Для решения задачи запрещено использовать циклы.
 def app(my_dict: dict) -> None:
-    ... # Ваш код
+    items = my_dict.items()
+    my_list = list(items)
+    print(my_list)
 
 
 if __name__ == "__main__":
