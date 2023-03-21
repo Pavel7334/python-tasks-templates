@@ -2,10 +2,12 @@
 # Напишите программу, формирующую словарь, где в качестве ключей 
 # выступают элементы первого списка, а в качестве значений - второго. 
 def app(my_list1: list, my_list2: list) -> None:
-    new_dict = {}
-    for i, sym in enumerate(my_list1):
-        new_dict[sym] = new_dict.get(sym, 0) + my_list2[i]
-    print(new_dict)
+    thisdict = dict.fromkeys(my_list1)
+
+    for idx, elem in enumerate(my_list2):
+        thisdict[my_list1[idx]] = elem
+
+    print(thisdict)
 
 
 if __name__ == "__main__":
