@@ -1,10 +1,10 @@
 # На вход программы подается 3 значения: val1, val2, val3. 
 # Найдите их сумму и выведите полученный результат в терминал. 
 def app():
-    val1 = int(input())
-    # Ваш код
+    result = sum([int(input()) for i in range(3)])
+    print(result)
 
 
 if __name__ == "__main__":
     app()
- 
+
