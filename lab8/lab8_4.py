@@ -3,7 +3,12 @@
 # в терминал «Bingo!» (без кавычек), иначе выведите 
 # получившийся остаток от деления.
 def app():
-    ... # Ваш код 
+    val1 = int(input())
+    val2 = int(input())
+    if val1 % val2 == 0:
+        print('Bingo!')
+    else:
+        print(val1 % val2)
 
 
 if __name__ == "__main__":
