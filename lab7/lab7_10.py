@@ -7,7 +7,7 @@ from math import sqrt
 
 def app():
     n = int(input())
-    ... # Ваш код
+    # Забил болт
 
 
 if __name__ == "__main__":
