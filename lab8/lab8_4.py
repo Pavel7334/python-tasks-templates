@@ -5,10 +5,11 @@
 def app():
     val1 = int(input())
     val2 = int(input())
-    if val1 % val2 == 0:
+    division_module = val1 % val2
+    if division_module == 0:
         print('Bingo!')
     else:
-        print(val1 % val2)
+        print(division_module)
 
 
 if __name__ == "__main__":
