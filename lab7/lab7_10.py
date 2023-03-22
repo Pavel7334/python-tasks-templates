@@ -8,7 +8,7 @@ import math
 def app():
     n = int(input())
     sqrt = math.sqrt(n)
-    print((sqrt + sqrt ** n) / 7)
+    print(sqrt * (n + sqrt * (n ** n)) / 7)
 
 
 if __name__ == "__main__":
