@@ -2,7 +2,10 @@
 # Вычислите следующее выражение (val1 + val2) / (val2 – val3) 
 # и выведите полученный результат в терминал.
 def app():
-    ... # Ваш код
+    val1 = int(input())
+    val2 = int(input())
+    val3 = int(input())
+    print((val1 + val2) / (val2 - val3))
 
 
 if __name__ == "__main__":
