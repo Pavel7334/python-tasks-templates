@@ -2,7 +2,8 @@
 # Найдите произведение его второго и среднего элемента 
 # и выведите полученный результат в терминал.
 def app():
-    ... # Ваш код
+    my_list = list(map(int, input().strip().split()))
+    print(my_list[1] * my_list[len(my_list) // 2])
 
 
 if __name__ == "__main__":
