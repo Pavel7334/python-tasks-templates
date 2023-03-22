@@ -2,12 +2,13 @@
 # Используя его, получите решение для следующего выражения 
 # (взять по номеру задания из файла tasks.pdf)
 # и выведите полученный результат в терминал:
-from math import sqrt
+import math
 
 
 def app():
     n = int(input())
-    # Забил болт
+    sqrt = math.sqrt(n)
+    print((sqrt + sqrt ** n) / 7)
 
 
 if __name__ == "__main__":
