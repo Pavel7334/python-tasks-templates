@@ -8,13 +8,13 @@ def app():
     x = float(input("x = "))
     y = float(input("y = "))
     if x > 0 and y > 0:
-        print("Точка в I четверти")
+        print("Точка в 1 четверти")
     elif x < 0 and y > 0:
-        print("Точка во II четверти")
+        print("Точка во 2 четверти")
     elif x < 0 and y < 0:
-        print("Точка в III четверти")
+        print("Точка в 3 четверти")
     elif x > 0 and y < 0:
-        print("Точка в IV четверти")
+        print("Точка в 4 четверти")
     elif x == 0 and y == 0:
         print("Точка в центре координат")
     elif x == 0:
