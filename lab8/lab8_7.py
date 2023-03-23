@@ -3,9 +3,10 @@
 # элемента, иначе произведение первого и предпоследнего.
 def app():
     my_list = list(map(int, input().strip().split()))
-    if my_list[len(my_list) // 2] >= 10:
+    middle_list = my_list[len(my_list) // 2]
+    if middle_list >= 10:
         print(my_list[0] + my_list[-1])
-    if my_list[len(my_list) // 2] < 10:
+    if middle_list < 10:
         print(my_list[0] * my_list[-2])
 
 
