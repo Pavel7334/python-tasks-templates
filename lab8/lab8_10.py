@@ -10,7 +10,7 @@ def app():
     a = int(input())
     b = int(input())
     c = int(input())
-    ... # Ваш код
+    ... # Ваш код # СКИПНУЛ
 
 
 if __name__ == "__main__":
