@@ -2,7 +2,11 @@
 # оно числом или нет и выведите в терминал «Number», либо «Other» (без кавычек) 
 # в зависимости от результата проверки.
 def app():
-    ... # Ваш код
+    num = input()
+    if num.isnumeric():
+        print('Number')
+    else:
+        print('Other')
 
 
 if __name__ == "__main__":
