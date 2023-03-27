@@ -9,6 +9,5 @@ def app():
     print(lst_avg)
 
 
-
 if __name__ == "__main__":
     app()
