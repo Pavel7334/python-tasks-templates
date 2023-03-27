@@ -5,8 +5,10 @@ import numpy
 
 
 def app():
-    lst_avg = numpy.average(list(map(int, input().strip().split())))
+    my_list = list(map(int, input().strip().split())) # Первый вариант
+    lst_avg = numpy.average(list(map(int, input().strip().split()))) # Второй вариант
     print(lst_avg)
+    print(sum(my_list) / len(my_list))
 
 
 if __name__ == "__main__":
