@@ -3,7 +3,7 @@
 # выведите полученный результат в терминал.
 def app():
     my_list = list(map(int, input().strip().split()))
-    ... # Ваш код
+    print([el for el in my_list if el % 2 != 0])
 
 
 if __name__ == "__main__":
