@@ -3,7 +3,9 @@
 # проинициализированный значениями val2 и выведите полученный результат в терминал.
 def app():
     val1 = int(input())
-    ... # Ваш код
+    val2 = int(input())
+    new_list = [val2 for _ in range(val1)]
+    print(new_list)
 
 
 if __name__ == "__main__":
