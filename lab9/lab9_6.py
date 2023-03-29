@@ -9,7 +9,7 @@ def app():
     # цикл вычисления суммы
     while i < len(my_list):
         amount += my_list[i]
-        i += 1
+        i += 2
     print("Сумма =", amount)
 
 
