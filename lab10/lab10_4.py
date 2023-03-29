@@ -3,7 +3,10 @@
 # элементы которого находятся в диапазоне от start до stop 
 # с шагом step и выведите полученный результат в терминал.
 def app():
-    ... # Ваш код
+    start = int(input())
+    stop = int(input())
+    step = int(input())
+    print([el for el in range(start, stop, step)])
 
 
 if __name__ == "__main__":
