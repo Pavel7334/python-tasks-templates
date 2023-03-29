@@ -6,6 +6,5 @@ def app():
     print([el for el in my_list if el % 3 == 0 and el % 5 == 0])
 
 
-
 if __name__ == "__main__":
     app()
