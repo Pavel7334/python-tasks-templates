@@ -2,7 +2,9 @@
 # сформируйте список, элементы которого нацело делятся на 3 и 5 
 # и выведите полученный результат в терминал.
 def app():
-    ... # Ваш код
+    my_list = list(map(int, input().strip().split()))
+    print([el for el in my_list if el % 3 == 0 and el % 5 == 0])
+
 
 
 if __name__ == "__main__":
