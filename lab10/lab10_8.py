@@ -3,7 +3,7 @@
 # выведите полученный результат в терминал.
 def app():
     my_str = '1,2,3,4,5,6,7,8'
-    print([int(el) for el in my_str.replace(',', '')])
+    print([int(el) for el in my_str.split(',')])
 
 
 if __name__ == "__main__":
