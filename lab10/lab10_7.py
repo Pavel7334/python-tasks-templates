@@ -2,8 +2,8 @@
 # удалите из него все элементы, значение которых больше, 
 # либо равно 19 и выведите полученный результат в терминал.
 def app():
-    ... # Ваш код
-
+    my_list = list(map(int, input().strip().split()))
+    print([el for el in my_list if el < 19])
 
 
 if __name__ == "__main__":
