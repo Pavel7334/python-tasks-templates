@@ -4,7 +4,7 @@
 # цифра один (1) и выведите полученный результат в терминал.
 def app():
     n = int(input())
-    print([el + 1 for el in range(n)])
+    print([el for el in range(n) if '1' in str(el)])
 
 
 if __name__ == "__main__":
