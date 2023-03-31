@@ -17,6 +17,38 @@ def list_create(a, b, c):
 print(list_create([1, 3, 4], 3, 'test'))
 
 
+# def list_create(a, b, c):                     2-e решение
+#     result = []
+#     for arg in (a, b, c):
+#         if type(arg) == str:
+#             result.append(arg)
+#             continue
+#         try:
+#             iter(arg)
+#         except TypeError:
+#             result.append(arg)
+#         else:
+#             result.extend(arg)
+#
+#     return result
+#
+#
+# print(list_create([1, 3, 4], 3, 'test'))
+
+
+# def list_create(a, b, c):                 3-e решение
+#     result = []
+#     for arg in (a, b, c):
+#         if type(arg) in [list, tuple, set, dict]:
+#             result.extend(arg)
+#         else:
+#             result.append(arg)
+#
+#     return result
+#
+#
+# print(list_create([1, 3, 4], 3, 'test'))
+
 
 if __name__ == "__main__":
     my_list1 = [1, 2, 3, 4]
