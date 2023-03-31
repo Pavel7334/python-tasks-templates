@@ -50,6 +50,20 @@ print(list_create([1, 3, 4], 3, 'test'))
 # print(list_create([1, 3, 4], 3, 'test'))
 
 
+# def list_create(a, b, c):                 4-e решение
+#     result = []
+#     for arg in (a, b, c):
+#         if type(arg) in [list, tuple, set, dict]:
+#             result = [*result, *arg]
+#         else:
+#             result = [*result, arg]
+#
+#     return result
+#
+#
+# print(list_create([1, 3, 4], 3, 'test'))
+
+
 if __name__ == "__main__":
     my_list1 = [1, 2, 3, 4]
     my_int = 9
