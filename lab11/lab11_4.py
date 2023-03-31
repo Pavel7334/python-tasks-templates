@@ -1,6 +1,21 @@
 #Напишите функцию list_create, на вход которой подается 3 значения 
 # любого типа и возвращающую сформированный из них список.
-... # Ваш код
+from collections.abc import Iterable
+
+
+def list_create(a, b, c):
+    result = []
+    for arg in (a, b, c):
+        if isinstance(arg, Iterable) and not isinstance(arg, str):
+            result.extend(arg)
+        else:
+            result.append(arg)
+
+    return result
+
+
+print(list_create([1, 3, 4], 3, 'test'))
+
 
 
 if __name__ == "__main__":
