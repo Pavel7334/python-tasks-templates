@@ -3,7 +3,12 @@
 # задают диапазон значений, которые будут добавлены в формируемый 
 # список, а третий аргумент отвечает за шаг. 
 # После завершения работы функция должна вернуть созданный список.
-... # Ваш код
+
+def list_create(start, stop, step):
+    new_list = []
+    for i in range(start, stop, step):
+        new_list.append(i)
+    return new_list
 
 
 if __name__ == "__main__":
