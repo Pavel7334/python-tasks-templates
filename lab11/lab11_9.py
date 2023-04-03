@@ -5,10 +5,7 @@
 # После завершения работы функция должна вернуть созданный список.
 
 def list_create(start, stop, step):
-    new_list = []
-    for i in range(start, stop, step):
-        new_list.append(i)
-    return new_list
+    return [i for i in range(start, stop, step)]
 
 
 if __name__ == "__main__":
