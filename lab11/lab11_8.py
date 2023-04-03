@@ -2,7 +2,7 @@
 # ли подаваемая на ее вход строка палиндромом и возвращает 
 # значение булевского типа данных (True – да, нет – False).
 def is_palindrome(val):
-    return True if val == val[::-1] else False
+    return val == val[::-1]
 
 
 if __name__ == "__main__":
