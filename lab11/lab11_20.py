@@ -3,15 +3,9 @@
 # возвращать их наибольший общий делитель.
 
 def gcd(val1, val2):
-    common = 0
-    if val1 > val2:
-        temp = val2
-    else:
-        temp = val1
-    for i in range(1, temp + 1):
+    for i in range(min(val1, val2), 0, -1):
         if val1 % i == 0 and val2 % i == 0:
-            common = i
-    return common
+            return i
 
 
 if __name__ == "__main__":
