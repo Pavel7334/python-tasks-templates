@@ -3,7 +3,10 @@
 # посчитать баланс открывающих и закрывающих скобок и 
 # если он соблюден, то вернуть значение – True, 
 # иначе – False. Когда в строке отсутствуют скобки должно возвращаться True.
-... # Ваш код
+def bracket(string: str) -> bool:
+    while '()' in string:
+        string = string.replace('()', '')
+    return string == ''
 
 
 if __name__ == "__main__":
