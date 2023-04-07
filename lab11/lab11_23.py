@@ -10,9 +10,6 @@ def bracket(string: str) -> bool:
     return string == ''
 
 
-
-
-
 if __name__ == "__main__":
     my_str = input("Введите строку со скобками ")
 
