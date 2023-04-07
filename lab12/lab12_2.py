@@ -3,11 +3,11 @@
 # минимального элемента списка.
 
 def recursion_min(lst: list) -> int:
-    num = 0
-    for el in lst:
-        if el < num:
-            num = el
-    return num
+    if len(lst) == 1:
+        return lst[0]
+
+    else:
+        return min(lst[0], recursion_min(lst[1:]))
 
 
 if __name__ == "__main__":
