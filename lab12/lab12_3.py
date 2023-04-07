@@ -2,7 +2,12 @@
 # подается целочисленный список. Функция должна вернуть значение 
 # максимального элемента списка. 
 
-# Ваш код
+def recursion_max(lst: list) -> int:
+    if len(lst) == 1:
+        return lst[0]
+
+    else:
+        return max(lst[0], recursion_max(lst[1:]))
 
 
 if __name__ == "__main__":
