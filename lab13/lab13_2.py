@@ -4,7 +4,12 @@
 # функцию, при вызове которой будет каждый раз возвращаться 
 # результат выражения n=n2. 
 
-# Ваш код 
+def closure_pow2(n):
+    def helper():
+        a = 2
+        return n ** a
+
+    return helper
 
 
 if __name__ == "__main__":
