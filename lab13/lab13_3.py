@@ -4,7 +4,10 @@
 # индексу. Если задаваемый индекс выходит за пределы строки, 
 # то верните пустой символ.
 
-# Ваш код 
+def closure_str(my_str: str):
+    def helper(ind: int):
+        return my_str[ind] if ind < len(my_str) else ''
+    return helper
 
 
 if __name__ == "__main__":
