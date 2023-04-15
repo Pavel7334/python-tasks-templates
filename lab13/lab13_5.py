@@ -5,7 +5,17 @@
 # В том случае, когда на вход closure_ comparison подается 
 # неизвестный символ – результат всегда False.
 
-# Ваш код 
+def closure_comparison(symbol: str) -> bool:
+    def helper(a, b):
+        if symbol == "=":
+            return a == b
+        if symbol == ">":
+            return a > b
+        if symbol == "<":
+            return a < b
+        if symbol == "!=":
+            return False
+    return helper
 
 if __name__ == "__main__":
     x = closure_comparison("=")
