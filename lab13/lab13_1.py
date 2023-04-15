@@ -4,7 +4,12 @@
 # при вызове которой будет возвращаться обновленное значение 
 # счетчика, увеличивающееся на единицу.
 
-# Ваш код    
+def create_counter(a):
+    def helper():
+        b = 1
+        return a + b
+
+    return helper
 
 
 if __name__ == "__main__":
@@ -12,4 +17,3 @@ if __name__ == "__main__":
     x = create_counter(val1)
     print(x())
     print(x())
-
