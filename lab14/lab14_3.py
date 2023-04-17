@@ -4,13 +4,18 @@
 # строка и возвращается ее инвертированное представление.
 
 
-# Код декоратора
+def upcase_result(func):
+    def wrapper(my_str):
+        return func(my_str).upper()
+
+    return wrapper
 
 
 @upcase_result
-# Код функции
+def reverse_str(my_str: str) -> str:
+    return my_str[::-1]
 
 
 if __name__ == "__main__":
     my_str1 = "qwerty"
-    print(reverse_str(my_str1)) # YTREWQ
+    print(reverse_str(my_str1))  # YTREWQ
