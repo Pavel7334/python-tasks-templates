@@ -4,7 +4,10 @@
 # в которую необходимо возвести каждый элемент списка и возвращающую 
 # полученный результат.
 
-# Ваш код 
+def closure_list_pow(my_list: list) -> list:
+    def helper(num: int):
+        return [el ** num for el in my_list]
+    return helper
 
 
 if __name__ == "__main__":
