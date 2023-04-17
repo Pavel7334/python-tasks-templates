@@ -3,7 +3,10 @@
 # функцию, принимающую на вход значение n и возвращающую список, 
 # в котором удалены все элементы, что без остатка делятся на n. 
 
-# Ваш код 
+def closure_list_del(my_list: list) -> list:
+    def helper(num: int):
+        return [el for el in my_list if el % num == 0]
+    return helper
 
 
 if __name__ == "__main__":
