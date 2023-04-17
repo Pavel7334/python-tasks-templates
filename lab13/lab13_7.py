@@ -2,7 +2,11 @@
 # Функция должна возвращать другую функцию, принимающую символ 
 # и возвращающую количество его повторений. 
 
-# Ваш код 
+def closure_count_str(my_str: str) -> int:
+    def helper(el: str):
+        new_str = my_str.count(el)
+        return new_str
+    return helper
 
 
 if __name__ == "__main__":
