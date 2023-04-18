@@ -4,11 +4,15 @@
 # и оно же возвращается. 
 
 
-# Код декоратора
+def fahrenheit(func):
+    def helper(tem):
+        return int(func(((tem * 9) / 5) + 32))
+    return helper
 
 
 @fahrenheit
-# Код функции
+def temperature_celsius(tem: int) -> int:
+    return tem
 
 
 if __name__ == "__main__":
