@@ -6,11 +6,17 @@
 # не совершая с ним никаких преобразований.
 
 
-# Код декоратора
+def check_type(func):
+    def helper(el):
+        if isinstance(el, int):
+            return func(el * 2)
+        return None
+    return helper
 
 
 @check_type
-# Код функции
+def reply_int(el):
+    return el
 
 
 if __name__ == "__main__":
