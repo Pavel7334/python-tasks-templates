@@ -7,11 +7,17 @@
 import time
 
 
-# Код декоратора
+def time_run(func):
+    def helper(*args, **kwargs):
+        start = time.time()
+        func(*args, **kwargs)
+        return time.time() - start
+    return helper
 
 
 @time_run
-# Код функции
+def algebraic_sum(n: int = 2, k: int = 2) -> list:
+    return sum(num ** k for num in range(1, n + 1))
 
 
 if __name__ == "__main__":
