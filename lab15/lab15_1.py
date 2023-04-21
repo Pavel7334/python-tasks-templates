@@ -3,7 +3,12 @@
 # При написании данной функции запрещено использовать стандартную 
 # функцию верхнего уровня –  range.
 
-# Код генераторной функции
+def my_generator(val: int, step: int = 1):
+
+    while val > 0:
+        yield val
+        val -= step
+
 
 if __name__ == "__main__":
     my_step = 3
