@@ -6,7 +6,9 @@
 # При написании данной функции запрещено использовать 
 # стандартную функцию верхнего уровня – enumerate.
 
-# Код генераторной функции
+def my_enumerate(my_list: list) -> tuple:
+    for i in my_list:
+        yield i, my_list.index(i)
 
 
 if __name__ == "__main__":
