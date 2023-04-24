@@ -1,11 +1,10 @@
 # Напишите функцию is_generator, принимающую на вход другую функцию 
 # и возвращающую True, если передается генераторная функция, иначе – False.
-import types
+import inspect
 
 
-# def is_generator(func):
-#     if func != types.GeneratorType:
-#         return False
+def is_generator(func):
+    return inspect.isgeneratorfunction(func)
 
 
 if __name__ == "__main__":
