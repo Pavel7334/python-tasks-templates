@@ -2,11 +2,14 @@
 # подается список целочисленных значений. Функция должна возвращать 
 # только четные значения из поданного на ее вход списка.
 
-# Код генераторной функции
+def list_odd(my_list: list) -> list:
+    for num in my_list:
+        if num % 2 == 0:
+            yield num
 
 
 if __name__ == "__main__":
     my_list = [1, 2, 3, 4, 5, 4, 6, 4, 7, 8, 9]
 
-    for i in list_mod(my_list):
+    for i in list_odd(my_list):
         print(i)
