@@ -2,7 +2,7 @@
 # подается целочисленное значение n. На каждом шаге итерации 
 # генератор должен возвращать n = n^2. 
 
-def my_pow(n: int) -> int:
+def my_pow(n: int) -> list:
     while True:
         n = n ** 2
         yield n
